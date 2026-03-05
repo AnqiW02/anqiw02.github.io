@@ -1,24 +1,51 @@
 ---
-title: "Look at this!"
+title: "Project Proposal: The Mushroom Paradox: Life After Forest Loss"
+subtitle: "Why Matsutake Thrive Where Forests Fall"
 ---
 
-# I have a webpage!
+# Research Overview
+This project investigates the spatial and temporal relationship between anthropogenic forest disturbance and the emergence of Matsutake mushrooms (*Tricholoma matsutake*). Using a dataset of over **28,000 global observations**, I aim to develop a **multi-scale interactive dashboard** to visualize how "ruined" landscapes, those impacted by industrial logging or fire, become the primary habitats for this high-value species.
 
-And I can put all kinds of stuff on it!
+Inspired by anthropologist **Anna Tsing's** work, this project examines how certain fungi paradoxically thrive in disturbed ecosystems rather than pristine forests, revealing unexpected patterns of resilience in damaged landscapes.
 
-Here we've got some general setup for your webpage. 
+# Research Questions
+1. **Spatial Correlation**: Is there a measurable spatial overlap between high-intensity tree cover loss and Matsutake occurrence density?
+2. **Temporal Lag-Time**: Does the "Lag-Time" theory hold true? Specifically, do mushrooms appear 5+ years after a disturbance event, suggesting that disturbed forests need time to develop conditions favorable for fungal growth?
+3. **Drivers of Ruin**: How do different causes of forest disturbance (e.g., commercial logging vs. wildfire vs. shifting agriculture) impact matsutake mushroom occurrence rates?
 
-# Here is a heading
+# Proposed Visualizations
+I will create an interactive web-based visualization using **R Shiny** and **Plotly** featuring:
 
-[This links to other pages!](about)
+### Primary Interactive Components:
+* **Global Interactive Choropleth Map**: Visualizing spatial hotspots of forest loss overlaid with matsutake sighting density. This will include interactive tooltips for region-specific statistics and filters for year and disturbance type.
+* **Temporal Analysis Dashboard**: 
+    * **Dual-axis timeline**: Comparing annual hectares of forest lost vs. matsutake sighting counts in key regions (e.g., Norrbotten, Sweden; Yunnan, China; Pacific Northwest, USA).
+    * **Lag-time scatter plot**: Testing the 5+ year hypothesis with interactive data points.
+* **Driver Comparison Visualization**: Faceted plots comparing matsutake emergence patterns across different types of forest disturbance (commodity-driven deforestation, wildfire, shifting agriculture).
 
+### Challenging Visualization Aspects:
+* **Multi-scalar Mapping**: Transitioning from global patterns to subnational regional analysis.
+* **Temporal Alignment**: Synchronizing disparate time-series data, aligning GBIF's point-occurrence data with Global Forest Watch's annual aggregated metrics.
+* **Multi-dimensional Integration**: Combining biodiversity, forest loss, and disturbance driver data into a singular, navigable interface.
 
+# Theoretical Framework
+The project is grounded in **Anna Tsing's** *The Mushroom at the End of the World* (2015), which documents how matsutake mushrooms thrive specifically in "disturbed" or "ruined" forests: landscapes transformed by human activity, rather than in undisturbed old-growth forests. By providing empirical spatial-temporal evidence for this phenomenon, this project tests whether mushroom productivity is indeed correlated with forest disturbance patterns at a global scale.
 
-## Advancing your skills
+# Data Sources
+1. **Biodiversity Data**: [GBIF (Global Biodiversity Information Facility)](https://www.gbif.org/) — 28,336 occurrence records (1900–2024).
+2. **Annual Forest Loss**: [Global Forest Watch (Hansen et al. 2013)](https://www.globalforestwatch.org/) — Subnational annual tree cover loss (2001–2024) in hectares.
+3. **Drivers of Forest Loss**: [Curtis et al. (2018), Science](https://www.science.org/doi/10.1126/science.aau3445) — Categorization of disturbance causes.
 
-You can take what we've done here and do additional adaptations. 
+# Data Access & Reproducibility
+To support open science, the merged and processed dataset is available for download:
 
-For example, you can explore other formats, [such as prettydoc](https://prettydoc.statr.me/) as it will give you greater customization. 
+<a href="matsutake_ruins_combined.csv" download>
+  <button style="background-color: #2c3e50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
+    📥 Download Processed Dataset (.csv)
+  </button>
+</a>
 
-### Custom CSS
-If you're looking to REALLY customize, you can add a custom.css file. You can see there is an example css file here that can make some changes. To add them, you can add `css: custom.css', indenting it under 'html' in [the _site.yml](_site.yml) file. 
+---
+
+### Data Integration Note
+The datasets have been **spatially joined** at the subnational administrative level and **temporally aligned** to enable lag-time analysis. The resulting dataset contains 28,336 observations with associated forest loss metrics and disturbance driver classifications.

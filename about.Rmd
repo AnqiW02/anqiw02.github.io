@@ -1,1 +1,8 @@
-# You can talk about yourself here!
+---
+title: "About the Theory"
+---
+
+# Why Matsutake?
+Matsutake mushrooms are famous for growing in human-disturbed forests. In this project, we bridge **Computational Social Science** with **Environmental Humanities**.
+
+[The Mushroom at the End of the World](https://en.wikipedia.org/wiki/The_Mushroom_at_the_End_of_the_World) by Anna Tsing serves as our primary theoretical guide, exploring how "collaborative survival" is possible in a precarious world.

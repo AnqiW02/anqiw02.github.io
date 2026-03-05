@@ -1,10 +1,17 @@
-# Including Tableau and Shiny
+---
+title: "Matsutake & Ruin Correlation"
+---
 
-## Tableau
-<iframe src="https://public.tableau.com/views/macs40700/BabyNamesDashboard?:showVizHome=no&:embed=true"
- width="980px" height="900px"></iframe>
+# Emergence in the Aftermath
+Does more forest loss lead to more mushrooms? Here, we use **Shiny/Plotly** to compare annual forest loss (ha) against mushroom sightings. 
 
-## Shiny
+Specifically, we test the **Lag-Time Theory**: Does a "ruin" need to mature for 5 years before it becomes a productive habitat for fungi?
 
+### Research Data
+You can download the merged dataset used for this analysis below:
 
-<iframe src="https://jclip.shinyapps.io/baby-names/" style="border: 1px solid #AAA; width: 800px; height: 760px"></iframe>
+<a href="matsutake_ruins_combined.csv" download>
+  <button style="background-color: #2c3e50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+    Download Merged Matsutake-Ruin Data (.csv)
+  </button>
+</a>

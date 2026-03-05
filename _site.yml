@@ -1,21 +1,38 @@
-name: "Student, Computational Social Scientist"
+name: "The Mushroom Paradox Project"
 output_dir: "."
 navbar:
-  title: "Home"
-  right:
-    - text: 'Projects' ## setting up a drop down menu
+  title: "🍄 The Mushroom Paradox"
+  left:
+    - text: "Home"
+      icon: fa-home
+      href: index.html
+    - text: "Analysis"
+      icon: fa-chart-line
       menu:
-        - text: 'Plotly'
-          href: text.html
-        - text: 'Shiny/Tableau'
-          href: text2.html
-    - text: "About"
-      href: about.html
+        - text: "Global Forest Disturbance Patterns"
+          href: global-disturbance.html
+        - text: "Matsutake-Ruin Correlation Analysis"
+          href: correlation-analysis.html
+        - text: "Temporal Lag-Time Testing"
+          href: lag-time.html
+    - text: "Theoretical Framework"
+      icon: fa-book
+      href: theory.html
+    - text: "Data & Methods"
+      icon: fa-database
+      href: methods.html
+  right:
     - icon: fa-github fa-lg
-      href: http://github.com/
+      href: https://github.com/AnqiW02
+      
 output: 
   html_document:
-    theme: united
+    theme: journal
+    highlight: tango
     toc: yes
     toc_float:
       collapsed: false
+      smooth_scroll: true
+    echo: false             
+    df_print: paged
+    css: custom.css

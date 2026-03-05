@@ -1,16 +1,8 @@
-# You can add stuff here if you want: Plotly
+---
+title: "Global Forest Disturbance"
+---
 
-Look I have a plotly plot here! Sample diamond data by cut. 
+# Mapping the "Ruin"
+This page features an interactive **Plotly** map showing global tree cover loss data from 2001–2024. 
 
-```{r, message = F, echo = F, warning = F}
-library(tidyverse)
-library(plotly)
-data(diamonds)
-p <- ggplot(data = diamonds, aes(x = carat, y = price)) +
-  geom_point(aes(text = paste("clarity:", clarity), color = clarity), size = 0.5) +
-  geom_smooth(aes(colour = cut, fill = cut)) + facet_wrap(~ cut) +
-  guides(color = "none")
-
-ggplotly(p)
-
-```
+We define "Ruin" as significant stand-replacement disturbances. By visualizing these hotspots, we set the stage for understanding where Matsutake mushrooms are most likely to appear.

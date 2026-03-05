@@ -1,5 +1,4 @@
 Version: 1.0
-ProjectId: 7c8b986d-393b-4988-be5d-91c5c7cebf25
 
 RestoreWorkspace: Default
 SaveWorkspace: Default
@@ -14,3 +13,4 @@ RnwWeave: Sweave
 LaTeX: pdfLaTeX
 
 BuildType: Website
+WebsitePath: ~/Desktop/Winter 2026/MACS 40700/Week 9/anqiw02.github.io
