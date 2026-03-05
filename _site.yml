@@ -10,11 +10,9 @@ navbar:
       icon: fa-chart-line
       menu:
         - text: "Global Forest Disturbance Patterns"
-          href: global-disturbance.html
+          href: text.html
         - text: "Matsutake-Ruin Correlation Analysis"
-          href: correlation-analysis.html
-        - text: "Temporal Lag-Time Testing"
-          href: lag-time.html
+          href: text2.html
     - text: "Theoretical Framework"
       icon: fa-book
       href: theory.html
